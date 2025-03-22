@@ -127,10 +127,14 @@ erDiagram
    - Một phòng ban có thể có một người quản lý (1:1)
 
 3. **GatePasses - Visitors**:
-   - Một phiếu có thể có nhiều khách (1:n)
+   - Một phiếu (GatePass) có thể có nhiều khách (Visitors) - mối quan hệ 1:n
+   - Mỗi khách chỉ thuộc về một phiếu duy nhất
+   - Được thể hiện thông qua khóa ngoại gate_pass_id trong bảng Visitors
 
 4. **GatePasses - LicensePlates**:
-   - Một phiếu có thể có nhiều biển số xe (1:n)
+   - Một phiếu (GatePass) có thể có nhiều biển số xe (LicensePlates) - mối quan hệ 1:n
+   - Mỗi biển số xe chỉ thuộc về một phiếu duy nhất
+   - Được thể hiện thông qua khóa ngoại gate_pass_id trong bảng LicensePlates
 
 5. **Permissions - RolePermissions**:
    - Một quyền có thể thuộc về nhiều vai trò (1:n)
